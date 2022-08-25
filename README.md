@@ -2,8 +2,7 @@
 ## _Chatting Bot Like Design (Whatsapp like interface)_
 
 
-- [Running Site](https:// arifulatwork.github.io
-/)
+- [Running Site](https://arifulatwork.github.io/)
 
 
 ## Technologies Used
