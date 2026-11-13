@@ -1,13 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Ariful Islam</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Md Ariful Islam — Professional Software Engineer & Digital Twin Researcher</title>
+<meta name="description" content="Professional Software Engineer & Digital Twin Researcher. Master's student in CPS2 at IMT Mines Saint-Étienne and Université Jean Monnet, France.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>Welcome to my GitHub Pages website</h1>
-  <p>I am a Software Engineer and Digital Twin Researcher.</p>
-  <p><a href="https://github.com/arifulatwork">My GitHub Profile</a></p>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#top" class="logo">Ariful Islam</a>
+    <nav class="links" id="links">
+      <a href="#about">About</a>
+      <a href="#work">Work</a>
+      <a href="#experience">Experience</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a href="#contact" class="btn btn-dark nav-cta">Get in touch</a>
+    <button class="burger" id="burger" aria-label="Menu"><span></span><span></span></button>
+  </div>
+</header>
+
+<main id="top">
+  <!-- Hero -->
+  <section class="hero">
+    <div class="wrap hero-in">
+      <div class="hero-text">
+        <span class="pill"><i class="dot"></i>Saint-Étienne, France</span>
+        <h1>Professional Software Engineer &amp;&nbsp;Digital&nbsp;Twin&nbsp;Researcher.</h1>
+        <p class="lead">I have built web and mobile apps with PHP, Python and JavaScript. Now I am looking for gaps to fill and building embedded systems connected to web and mobile, with digital twins and AI for smarter cyber-physical systems.</p>
+        <div class="actions">
+          <a href="#work" class="btn btn-dark">View projects</a>
+          <a href="#contact" class="btn btn-light">Contact me</a>
+        </div>
+      </div>
+      <div class="hero-photo">
+        <img src="./assets/images/Capture.webp" alt="Md Ariful Islam">
+      </div>
+    </div>
+    <div class="wrap stats">
+      <div><strong>4+</strong><span>Years experience</span></div>
+      <div><strong>20+</strong><span>Projects completed</span></div>
+      <div><strong>10+</strong><span>Web apps</span></div>
+      <div><strong>10+</strong><span>Mobile apps</span></div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section">
+    <div class="wrap two">
+      <div>
+        <p class="eyebrow">About</p>
+        <h2>Clean architecture, shipped end to end.</h2>
+      </div>
+      <div class="prose">
+        <p>Software Engineer with over 4 years of experience designing and developing scalable web and mobile applications. Skilled in clean system architecture, strong Object-Oriented Programming principles, and efficient, maintainable code.</p>
+        <p>Experienced in end-to-end product development, from planning and documentation (SRS, SDD, ADR, API specs) to deployment with CI/CD pipelines and automated testing. I integrate AI/ML solutions to create secure, high-quality digital products with real user impact.</p>
+        <div class="skills">
+          <div><h4>Languages</h4><p class="tags"><span>PHP</span><span>Python</span><span>JavaScript</span><span>TypeScript</span><span>Java</span><span>Dart</span></p></div>
+          <div><h4>Frameworks</h4><p class="tags"><span>Laravel</span><span>React</span><span>Next.js</span><span>Angular</span><span>Flutter</span><span>Node.js</span></p></div>
+          <div><h4>Tools &amp; Infrastructure</h4><p class="tags"><span>Docker</span><span>MySQL</span><span>MongoDB</span><span>Firebase</span><span>CI/CD</span><span>AWS</span></p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Focus -->
+  <section id="focus" class="section alt">
+    <div class="wrap">
+      <p class="eyebrow">Focus areas</p>
+      <h2>What I work on</h2>
+      <div class="focus">
+        <article class="card">
+          <span class="num">01</span>
+          <h3>Embedded systems &amp; digital twins</h3>
+          <p>Building embedded systems connected to web and mobile apps, and researching digital twins for cyber-physical systems.</p>
+        </article>
+        <article class="card">
+          <span class="num">02</span>
+          <h3>AI &amp; automation</h3>
+          <p>Applying AI/ML to real products: chatbots, recommendations, prediction models and AI-driven project management.</p>
+        </article>
+        <article class="card">
+          <span class="num">03</span>
+          <h3>Backend &amp; cloud</h3>
+          <p>Laravel, Python and Node.js services with REST APIs, payments, authentication, Docker and CI/CD deployment.</p>
+        </article>
+        <article class="card">
+          <span class="num">04</span>
+          <h3>Web &amp; mobile</h3>
+          <p>Responsive web apps with React and Next.js, and cross-platform mobile apps with Flutter and React Native.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="section">
+    <div class="wrap">
+      <div class="head">
+        <div>
+          <p class="eyebrow">Work</p>
+          <h2>Featured projects</h2>
+        </div>
+        <div class="filters" id="filters"></div>
+      </div>
+      <div class="grid" id="projects"></div>
+      <div class="more"><button class="btn btn-light" id="moreBtn">Show all projects</button></div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section alt">
+    <div class="wrap">
+      <p class="eyebrow">Experience</p>
+      <h2>Work history</h2>
+      <div class="timeline">
+        <div class="row">
+          <div class="when">Oct 2025 – Present</div>
+          <div><h3>Lecturer</h3><p class="meta">Riga Technical University</p><p>Teaching two Human-Computer Interaction courses (LA0660 for international students, LA0529 for Latvian students): user-centered design, usability, UI/UX and interface evaluation applied to real software projects.</p></div>
+        </div>
+        <div class="row">
+          <div class="when">Jan 2025 – Present</div>
+          <div><h3>Freelance Full-Stack Developer</h3><p class="meta">Expat Globe Barcelona</p><p>Built a production-ready Barcelona travel guide with a Laravel backend and React (Vite) frontend: secure auth, role-based admin, Stripe payments with webhooks, map discovery, wishlists, reviews, bookings, REST APIs, SEO, EN/ES i18n, CI/CD and SSL deployment.</p></div>
+        </div>
+        <div class="row">
+          <div class="when">Dec 2024 – Dec 2025</div>
+          <div><h3>Research Assistant</h3><p class="meta">Riga Technical University</p><p>Implemented a model-based methodology for IT project management plan and scope using AI algorithms. Owned architecture and code, taking the work from concept to deployment and a publication-ready study.</p></div>
+        </div>
+        <div class="row">
+          <div class="when">May 2023 – Aug 2024</div>
+          <div><h3>Software Engineer</h3><p class="meta">Hi-Tech Marine and Industrial Engineering Limited</p><p>Led development of Laravel web applications: an e-commerce platform with real-time updates and payments, education platforms for student and school management, and an OKR/KPI tracking system. Delivered API docs and modernized legacy systems.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" class="section">
+    <div class="wrap">
+      <p class="eyebrow">Education</p>
+      <h2>Academic background</h2>
+      <div class="edu">
+        <article class="card edu-new">
+          <span class="badge">Current</span>
+          <h3>Master's in Computer Science — CPS2</h3>
+          <p class="meta">IMT Mines Saint-Étienne &amp; Université Jean Monnet · Saint-Étienne, France</p>
+          <p class="period">2026 – Present</p>
+          <p>Joint master's programme in Cyber-Physical &amp; Social Systems (CPS2), combining the engineering approach of École des Mines with the research strength of Université Jean Monnet.</p>
+        </article>
+        <article class="card">
+          <h3>Master's in Information Technology</h3>
+          <p class="meta">Riga Technical University · Latvia</p>
+          <p class="period">Jan 2024 – Jan 2026</p>
+          <p>Specialized in Artificial Intelligence and Software Engineering, with research on AI-driven project management and human-computer interaction.</p>
+          <ul>
+            <li>Researched integrating AI with QFD to optimize project management</li>
+            <li>Teaching Assistant for Human-Computer Interaction courses</li>
+            <li>Technical reports and documentation for academic and industry projects</li>
+          </ul>
+        </article>
+        <article class="card">
+          <h3>Bachelor of Computer Science (Software Engineering, Hons)</h3>
+          <p class="meta">Universiti Teknologi Malaysia</p>
+          <p class="period">Jan 2018 – Mar 2023</p>
+          <p>Industry-focused programme covering web development, databases, agile, cloud computing, cybersecurity and AI.</p>
+          <ul>
+            <li>Core documentation: SRS, STD and SDD</li>
+            <li>Built and deployed multiple full-stack applications</li>
+            <li>Industry experience in a software company during final year</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section">
+    <div class="wrap contact">
+      <div>
+        <p class="eyebrow">Contact</p>
+        <h2>Let's build something remarkable together.</h2>
+        <p class="lead sm">Open to software and embedded systems jobs, or PhD opportunities.</p>
+      </div>
+      <div class="card contact-card">
+        <a href="mailto:arifulatwork@gmail.com"><span>Email</span>arifulatwork@gmail.com</a>
+        <a href="tel:+33744250395"><span>Phone</span>+33 7 44 25 03 95</a>
+        <div><span>Location</span>Saint-Étienne, France</div>
+        <div class="social">
+          <a href="https://github.com/arifulatwork" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/md-ariful-islam-b531a5110/" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="https://twitter.com/ariful_1997" target="_blank" rel="noopener">X ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-in">
+    <p>© <span id="year">2026</span> Md Ariful Islam. All rights reserved.</p>
+    <p><a href="#top">Back to top ↑</a></p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
 </body>
 </html>
